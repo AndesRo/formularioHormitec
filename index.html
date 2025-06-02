@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <title>Formulario de Cotización - Hormitec</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    * {
+<style>
+* {
       box-sizing: border-box;
     }
 
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #003366;
       margin: 0;
       padding: 30px;
     }
@@ -99,11 +99,28 @@
       .form-container {
         padding: 20px;
       }
+
+      
     }
-  </style>
+    .top-bar {
+  height: 12px;
+  background-color: #FFC300;
+  width: 100%;
+  position: absolute;
+  top: 50px; /* coincide con el padding top del body */
+  left: 0;
+  z-index: 0;
+}
+
+.form-container {
+  position: relative;
+  z-index: 1;
+}
+
+</style>
 </head>
 <body>
-
+<div class="top-bar"></div>
   <div class="form-container">
     <img src="logo/Logo-Hormitec.png" alt="Logo de Hormitec">
 
